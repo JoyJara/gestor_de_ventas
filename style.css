@@ -26,4 +26,8 @@
   body {
     font-family: Arial, sans-serif;
   }
+
+  footer {
+    margin-bottom: -16px;
+  }
   
