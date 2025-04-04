@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard</title>
+  <title>Panel de Inicio</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   
-  <!-- Custom CSS -->
+  <!-- css -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- esto es pa q el footer siempre este hasta abajo de la página -->
   <style>
     html, body {
       height: 100%;
@@ -24,18 +26,27 @@
       flex: 1;
     }
   </style>
+
 </head>
+
 <body>
-  <!-- Navbar -->
+
+  <!-- barra de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark custom-green">
     <div class="container-fluid">
+      
       <a class="navbar-brand" href="#">Gestor de Inventario</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDashboard" 
-              aria-controls="navbarNavDashboard" aria-expanded="false" aria-label="Toggle navigation">
+
+      <!--este botón del navbar solo se muestra cuando el tamaño de la página es muy pequeño -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu_navegacion" 
+              aria-controls="menu_navegacion" aria-expanded="false" aria-label="menú de navegación">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDashboard">
-        <ul class="navbar-nav ms-auto">
+
+      <div class="collapse navbar-collapse" id="menu_navegacion"> <!-- indíca un menu colapsable-->
+
+        <!-- lista del menú y su contenido -->
+        <ul class="navbar-nav ms-auto"> <!-- mueve el menú hacia la derecha -->
 
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="dashboard.html">Inicio</a>
@@ -50,16 +61,21 @@
           </li>
 
         </ul>
+
       </div>
     </div>
   </nav>
 
-  <!-- Contenido principal -->
+  <!-- contenido de la página -->
   <main class="content">
+
+    <!-- grid (filas y columnas) que contiene las categorías (cards) del panel de inicio -->
     <div class="container mt-5">
       <h1 class="mb-4">Panel de Inicio</h1>
-      <div class="row">
-        <div class="col-md-4">
+
+      <div class="row"> <!-- es una sola fila -->
+
+        <div class="col-md-4"> <!-- columan 1 -->
           <div class="card text-center mb-3">
             <div class="card-body">
               <h5 class="card-title">Ventas</h5>
@@ -68,7 +84,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+
+        <div class="col-md-4"> <!-- columan 2 -->
           <div class="card text-center mb-3">
             <div class="card-body">
               <h5 class="card-title">Inventario</h5>
@@ -77,7 +94,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+
+        <div class="col-md-4"> <!-- columan 3 -->
           <div class="card text-center mb-3">
             <div class="card-body">
               <h5 class="card-title">Reportes</h5>
@@ -86,11 +104,14 @@
             </div>
           </div>
         </div>
+
       </div>
+
     </div>
+
   </main>
 
-  <!-- Footer -->
+  <!-- footer -->
   <footer class="custom-green text-white text-center py-3">
     <div class="container">
       <p>&copy; 2025 Gestor de Inventario. Todos los derechos reservados.</p>
@@ -98,7 +119,7 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- bootstrap bundle, incluye todos los plugins de js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
