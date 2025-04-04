@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administración de Usuarios - Punto de Venta</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-green">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Punto de Venta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAdmin" 
+              aria-controls="navbarNavAdmin" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAdmin">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ventas.html">Ventas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inventario.html">Inventario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reportes.html">Reportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="configuracion.html">Configuración</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="administracion.html">Usuarios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container mt-5">
+    <h1 class="mb-4">Administración de Usuarios</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Rol</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Juan Pérez</td>
+          <td>juan@example.com</td>
+          <td>Administrador</td>
+          <td>
+            <button class="btn btn-sm btn-warning">Editar</button>
+            <button class="btn btn-sm btn-danger">Eliminar</button>
+          </td>
+        </tr>
+        <!-- Más filas de usuarios -->
+      </tbody>
+    </table>
+    <button class="btn custom-green-btn">Agregar Nuevo Usuario</button>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
